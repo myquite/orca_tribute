@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  font-family: serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   color: #3c3d41;
   background-color: #fff;
@@ -35,8 +35,8 @@ h6 {
 }
 
 header {
-  margin: 0;
-  padding: 1rem 1rem 4rem;
+  margin-bottom: 4rem;
+  padding: 4rem 1rem 4rem;
   background-color: #0a0d17;
   border-top: 1rem solid #477eb0;
 }
@@ -66,6 +66,7 @@ header h1 {
   background-color: #16181a;
   background: url("./images/orca_wp.jpg") center / cover no-repeat;
   margin-bottom: 1rem;
+  border: 4px solid #477eb0;
 }
 
 section,
@@ -75,13 +76,12 @@ aside {
 
 h2 {
   border-bottom: 0.25rem solid #477eb0;
-  padding: 0.25rem;
-  margin-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .fact-card {
   color: white;
-  background-color: #212227;
+  background-color: #0a0d17;
   text-align: center;
   padding: 2rem 2rem;
   margin-bottom: 2rem;
@@ -91,13 +91,14 @@ h2 {
 .fact-card h3 {
   text-transform: uppercase;
   color: white;
+  font-size: 1rem;
+  font-weight: normal;
   border-bottom: 0.25rem solid #477eb0;
   padding-bottom: 1rem;
   margin: 0;
 }
 
 .fact-card p {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 2.4rem;
 }
@@ -108,15 +109,43 @@ h2 {
 }
 
 .info-card strong {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   color: white;
-  background-color: #477eb0;
-  padding: 5px 10px;
+  background-color: #0a0d17;
+  border-bottom: 4px solid #477eb0;
+  padding: 2px 8px;
+  margin-right: 0.25rem;
 }
 
 .info-card p {
   letter-spacing: 1px;
+}
+
+@media screen and (min-width: 600px) {
+  header .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .head-shot {
+    flex-shrink: 0;
+    margin-right: 2rem;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
 }
