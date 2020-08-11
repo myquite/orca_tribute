@@ -38,6 +38,7 @@ header {
   margin: 0;
   padding: 1rem 1rem 4rem;
   background-color: #0a0d17;
+  border-top: 1rem solid #477eb0;
 }
 
 header .container {
@@ -49,9 +50,12 @@ header h1 {
   color: white;
 }
 
-header p {
+.lead-p {
+  font-size: 1.25rem;
   color: white;
+  padding-left: 1rem;
   letter-spacing: 1px;
+  border-left: 0.25rem solid #477eb0;
 }
 
 .head-shot {
@@ -62,4 +66,43 @@ header p {
   background-color: #16181a;
   background: url("./images/orca_wp.jpg") center / cover no-repeat;
   margin-bottom: 1rem;
+}
+
+section,
+aside {
+  margin-bottom: 4rem;
+}
+
+.info h2 {
+  border-bottom: 0.25rem solid #477eb0;
+  padding: 0.25rem;
+  margin-top: 3rem;
+}
+
+.fact-card {
+  color: white;
+  background-color: #212227;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.fact-card h3 {
+  text-transform: uppercase;
+  color: white;
+  border-bottom: 0.25rem solid #477eb0;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.fact-card p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.info-card {
+  border: 1px solid #cccccc;
+  padding: 1rem;
 }
