@@ -156,6 +156,18 @@ h2 {
   letter-spacing: 1px;
 }
 
+footer {
+  background-color: #0a0d17;
+  font-size: 0.8rem;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: #477eb0;
+}
+
 @media screen and (min-width: 600px) {
   header .container {
     flex-direction: row;
